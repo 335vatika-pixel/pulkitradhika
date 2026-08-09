@@ -32,7 +32,11 @@ export function OpeningGate({ onEnter }: { onEnter: () => void }) {
       <Petals />
 
       <div
-        className={`absolute inset-0 z-[8] bg-[radial-gradient(circle_at_50%_48%,oklch(0.18_0.03_55/0.78),oklch(0.18_0.03_55/0.4))] transition-opacity duration-700 ${
+        style={{
+          background:
+            "radial-gradient(circle at 50% 48%, oklch(0.18 0.03 55 / 0.8), oklch(0.18 0.03 55 / 0.45))",
+        }}
+        className={`absolute inset-0 z-[8] transition-opacity duration-700 ${
           opened ? "opacity-0" : "opacity-100"
         }`}
       />
