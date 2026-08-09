@@ -1,4 +1,6 @@
 // ALL editable wedding content lives here.
+import weddingMusic from "@/assets/wedding.mp3.asset.json";
+
 export const config = {
   groomName: "PULKIT ARORA",
   brideName: "RADHIKA ARORA",
@@ -14,8 +16,7 @@ export const config = {
   whatsappNumber: "919914031000",
   whatsappMessage:
     "Hello! We would love to RSVP for Pulkit & Radhika's Varmala and Vows on 13 September 2026.",
-  // Drop an audio file at public/music/wedding.mp3 to enable music.
-  musicFile: "/music/wedding.mp3",
+  musicFile: weddingMusic.url,
   countdownDate: "2026-09-13T00:00:00",
   mapsQuery: "Siddhartha Resorts, Pakhowal Road, Ludhiana",
 
