@@ -385,14 +385,15 @@
   border: 1px solid color-mix(in oklab, var(--gold) 50%, transparent);
   border-radius: 2px;
   padding: 0.75rem 0.25rem;
-  background: color-mix(in oklab, var(--ivory) 70%, transparent);
+  background: oklch(0.2 0.02 55 / 0.6);
 }
 .countdown-num {
   display: block;
   font-family: var(--font-display);
   font-size: 1.4rem;
-  color: var(--burgundy);
+  color: var(--gold-soft);
 }
+
 .countdown-label {
   display: block;
   margin-top: 0.25rem;
