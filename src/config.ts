@@ -1,4 +1,6 @@
 // ALL editable wedding content lives here.
+import weddingMusic from "@/assets/wedding.mp3.asset.json";
+
 export const config = {
   groomName: "PULKIT ARORA",
   brideName: "RADHIKA ARORA",

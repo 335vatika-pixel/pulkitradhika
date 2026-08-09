@@ -13,9 +13,15 @@ function diff(target: number) {
 
 export function Countdown() {
   const target = new Date(config.countdownDate).getTime();
-  const [time, setTime] = useState(() => diff(target));
+  const [time, setTime] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
   useEffect(() => {
+    setTime(diff(target));
     const id = setInterval(() => setTime(diff(target)), 1000);
     return () => clearInterval(id);
   }, [target]);
