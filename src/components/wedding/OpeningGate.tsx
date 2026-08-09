@@ -32,11 +32,17 @@ export function OpeningGate({ onEnter }: { onEnter: () => void }) {
       <Petals />
 
       <div
+        className={`absolute inset-0 z-[8] bg-[radial-gradient(circle_at_50%_48%,oklch(0.18_0.03_55/0.78),oklch(0.18_0.03_55/0.4))] transition-opacity duration-700 ${
+          opened ? "opacity-0" : "opacity-100"
+        }`}
+      />
+
+      <div
         className={`absolute inset-0 z-10 flex flex-col items-center justify-center px-8 text-center transition-opacity duration-700 ${
           opened ? "opacity-0" : "opacity-100"
         }`}
       >
-        <p className="max-w-[16rem] whitespace-pre-line font-body text-[0.95rem] italic leading-relaxed text-[oklch(0.28_0.03_55)]">
+        <p className="max-w-[16rem] whitespace-pre-line font-body text-[1rem] italic leading-relaxed text-[var(--ivory)]">
           {config.opening.blessing}
         </p>
 
