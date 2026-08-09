@@ -56,7 +56,7 @@ export function OpeningGate({ onEnter }: { onEnter: () => void }) {
           {config.brideShort}
         </h1>
 
-        <p className="mt-6 font-display text-[0.7rem] tracking-[0.4em] text-[oklch(0.34_0.05_35)]">
+        <p className="mt-6 font-display text-[0.7rem] tracking-[0.4em] text-[var(--gold-soft)]">
           {config.weddingTitle}
         </p>
 
