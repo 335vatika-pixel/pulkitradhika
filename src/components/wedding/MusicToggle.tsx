@@ -41,7 +41,7 @@ export function MusicToggle({ active }: { active: boolean }) {
 
   return (
     <>
-      <audio ref={audioRef} src={config.musicFile} loop preload="none" />
+      <audio ref={audioRef} src={config.musicFile} loop preload="auto" />
       <button
         type="button"
         onClick={toggle}
