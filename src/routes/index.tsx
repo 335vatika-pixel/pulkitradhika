@@ -274,33 +274,39 @@ function Invitation() {
       </section>
 
       {/* 8 — Venue */}
-      <section className="scene bg-[var(--sandstone)]">
+      <section className="scene night-panel">
         <img
           src={temple}
           alt="Royal resort pavilion"
           loading="lazy"
           width={896}
           height={1408}
-          className="absolute inset-0 h-full w-full object-cover opacity-40"
+          className="absolute inset-0 h-full w-full object-cover opacity-20"
         />
-        <Reveal className="relative z-10">
-          <p className="kicker">THE VENUE</p>
-          <h2 className="mt-4 font-display text-2xl tracking-[0.16em] text-[var(--burgundy)]">
-            {config.venue}
-          </h2>
-          <p className="mt-3 font-display text-[0.72rem] tracking-[0.28em] text-[var(--burgundy)] opacity-85">
-            {config.venueAddress}
-          </p>
-          <Ornament />
-          <a
-            className="btn-royal"
-            href={mapsUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {config.venuePage.cta}
-          </a>
+        <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.14_0.015_55/0.85),oklch(0.12_0.015_55/0.7)_45%,oklch(0.14_0.015_55/0.9))]" />
+        <Petals variant="gold" />
+        <Reveal className="relative z-10 w-full max-w-[22rem]">
+          <div className="mughal-arch filigree-frame px-6 py-12">
+            <p className="kicker">THE VENUE</p>
+            <h2 className="mt-4 font-display text-2xl tracking-[0.16em] text-gold-foil">
+              {config.venue}
+            </h2>
+            <p className="mt-3 font-display text-[0.72rem] tracking-[0.28em] text-[var(--gold-soft)] opacity-85">
+              {config.venueAddress}
+            </p>
+            <Ornament />
+            <a
+              className="btn-royal"
+              href={mapsUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {config.venuePage.cta}
+            </a>
+          </div>
         </Reveal>
+      </section>
+
       </section>
 
       {/* 9 — RSVP */}
