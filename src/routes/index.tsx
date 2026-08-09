@@ -94,7 +94,7 @@ function Invitation() {
           height={1408}
           className="drift-slow absolute inset-0 h-full w-full object-cover"
         />
-        <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.4_0.04_130/0.45),transparent_35%,oklch(0.4_0.04_130/0.6))]" />
+        <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.35_0.04_130/0.7),oklch(0.35_0.04_130/0.15)_40%,oklch(0.4_0.04_130/0.6))]" />
         <Petals variant="gold" />
         <Reveal className="relative z-10">
           <p className="kicker">SHUBH VIVAH</p>
@@ -160,7 +160,7 @@ function Invitation() {
           height={1408}
           className="drift-slow absolute inset-0 h-full w-full object-cover"
         />
-        <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.25_0.03_55/0.55),transparent_45%,oklch(0.25_0.03_55/0.65))]" />
+        <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.2_0.03_55/0.72),oklch(0.2_0.03_55/0.1)_45%,oklch(0.25_0.03_55/0.65))]" />
         <div className="relative z-10 flex h-full w-full flex-col justify-between gap-40 py-6">
           <Reveal>
             <h2 className="whitespace-pre-line font-display text-lg leading-relaxed tracking-[0.24em] text-[var(--ivory)]">
@@ -252,7 +252,7 @@ function Invitation() {
           height={1408}
           className="drift-slow absolute inset-0 h-full w-full object-cover"
         />
-        <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.24_0.03_55/0.6),transparent_40%,oklch(0.24_0.03_55/0.7))]" />
+        <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.2_0.03_55/0.7),oklch(0.2_0.03_55/0.1)_40%,oklch(0.24_0.03_55/0.7))]" />
         <div className="relative z-10 flex w-full flex-col justify-between gap-44">
           <Reveal>
             <h2 className="font-display text-lg tracking-[0.3em] text-[var(--ivory)]">
