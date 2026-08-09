@@ -307,7 +307,7 @@ function Invitation() {
         </Reveal>
       </section>
 
-      </section>
+
 
       {/* 9 — RSVP */}
       <section className="scene night-panel">
