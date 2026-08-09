@@ -105,34 +105,36 @@ function Invitation() {
       </section>
 
       {/* 3 — Antique scroll */}
-      <section className="scene bg-[var(--sage)]">
+      <section className="scene night-panel">
         <div className="relative z-10 w-full max-w-[24rem]">
           <Reveal>
             <div className="scroll-rod mx-2" />
             <div className="parchment filigree-frame px-6 py-10">
-              <p className="font-display text-[0.72rem] tracking-[0.34em] text-[var(--burgundy)]">
+              <p className="font-display text-[0.72rem] tracking-[0.34em] text-[var(--gold)]">
                 {config.weddingTitle}
               </p>
               <Ornament />
-              <p className="whitespace-pre-line font-body text-[0.95rem] italic leading-relaxed text-[var(--burgundy)]">
+              <p className="whitespace-pre-line font-body text-[0.95rem] italic leading-relaxed text-[var(--gold-soft)]">
                 {config.scroll.intro}
               </p>
-              <p className="mt-6 font-display text-lg leading-relaxed tracking-[0.12em] text-[var(--burgundy)]">
+              <p className="mt-6 font-display text-lg leading-relaxed tracking-[0.12em] text-gold-foil">
                 {config.groomName}
                 <span className="my-1 block font-script text-xl italic tracking-normal">
                   &amp;
                 </span>
                 {config.brideName}
               </p>
-              <p className="mt-6 whitespace-pre-line font-body text-[0.95rem] italic leading-relaxed text-[var(--burgundy)]">
+              <p className="mt-6 whitespace-pre-line font-body text-[0.95rem] italic leading-relaxed text-[var(--gold-soft)]">
                 {config.scroll.outro}
               </p>
               <Ornament />
-              <p className="font-display text-[0.7rem] tracking-[0.3em] text-[var(--burgundy)]">
+              <p className="font-display text-[0.7rem] tracking-[0.3em] text-[var(--gold)]">
                 {config.day}
-                <span className="mt-1 block text-[0.8rem]">{config.date}</span>
+                <span className="mt-1 block text-[0.8rem] text-[var(--gold-soft)]">
+                  {config.date}
+                </span>
               </p>
-              <p className="mt-5 font-display text-[0.68rem] leading-relaxed tracking-[0.24em] text-[var(--burgundy)]">
+              <p className="mt-5 font-display text-[0.68rem] leading-relaxed tracking-[0.24em] text-[var(--gold-soft)]">
                 {config.venue}
                 <span className="mt-1 block opacity-80">
                   {config.venueAddress}
@@ -140,7 +142,7 @@ function Invitation() {
               </p>
               <p className="mt-5 font-display text-[0.6rem] tracking-[0.34em] text-[var(--gold)]">
                 RSVP
-                <span className="mt-1 block text-[0.75rem] text-[var(--burgundy)]">
+                <span className="mt-1 block text-[0.75rem] text-[var(--gold-soft)]">
                   {config.rsvpNumber}
                 </span>
               </p>
@@ -149,6 +151,7 @@ function Invitation() {
           </Reveal>
         </div>
       </section>
+
 
       {/* 4 — Family blessings / temple */}
       <section className="scene">
@@ -200,27 +203,27 @@ function Invitation() {
       </section>
 
       {/* 6 — Wedding details */}
-      <section className="scene bg-[var(--cream)]">
+      <section className="scene night-panel">
         <Reveal className="relative z-10 w-full max-w-[22rem]">
           <div className="filigree-frame px-6 py-12">
-            <h2 className="whitespace-pre-line font-display text-base leading-relaxed tracking-[0.3em] text-[var(--burgundy)]">
+            <h2 className="whitespace-pre-line font-display text-base leading-relaxed tracking-[0.3em] text-[var(--gold)]">
               {config.details.heading}
             </h2>
             <Ornament />
             <p className="font-display text-xl leading-relaxed tracking-[0.14em] text-gold-foil">
               {config.groomName}
-              <span className="my-1 block font-script text-2xl italic tracking-normal text-[var(--burgundy)]">
+              <span className="my-1 block font-script text-2xl italic tracking-normal text-[var(--gold-soft)]">
                 &amp;
               </span>
               {config.brideName}
             </p>
             <Ornament />
-            <p className="font-display text-2xl tracking-[0.14em] text-[var(--burgundy)]">
+            <p className="font-display text-2xl tracking-[0.14em] text-[var(--gold-soft)]">
               {config.date}
             </p>
             <p className="mt-2 kicker">{config.day}</p>
             <div className="gold-rule my-6" />
-            <p className="font-display text-[0.72rem] leading-relaxed tracking-[0.24em] text-[var(--burgundy)]">
+            <p className="font-display text-[0.72rem] leading-relaxed tracking-[0.24em] text-[var(--gold-soft)]">
               {config.venue}
               <span className="mt-1 block opacity-80">
                 {config.venueAddress}
@@ -231,16 +234,17 @@ function Invitation() {
       </section>
 
       {/* Countdown */}
-      <section className="scene bg-[var(--ivory)]">
+      <section className="scene night-panel">
         <Petals variant="gold" />
         <Reveal className="relative z-10 w-full max-w-[22rem]">
-          <h2 className="whitespace-pre-line font-display text-base leading-relaxed tracking-[0.3em] text-[var(--burgundy)]">
+          <h2 className="whitespace-pre-line font-display text-base leading-relaxed tracking-[0.3em] text-[var(--gold)]">
             {config.countdown.heading}
           </h2>
           <Ornament />
           <Countdown />
         </Reveal>
       </section>
+
 
       {/* 7 — Varmala and Vows */}
       <section className="scene">
@@ -300,23 +304,24 @@ function Invitation() {
       </section>
 
       {/* 9 — RSVP */}
-      <section className="scene bg-[var(--cream)]">
+      <section className="scene night-panel">
         <Petals variant="gold" />
         <Reveal className="relative z-10 w-full max-w-[22rem]">
-          <h2 className="whitespace-pre-line font-display text-base leading-relaxed tracking-[0.28em] text-[var(--burgundy)]">
+          <h2 className="whitespace-pre-line font-display text-base leading-relaxed tracking-[0.28em] text-[var(--gold)]">
             {config.rsvp.heading}
           </h2>
           <Ornament />
-          <p className="whitespace-pre-line font-body text-[1rem] italic leading-relaxed text-[var(--burgundy)]">
+          <p className="whitespace-pre-line font-body text-[1rem] italic leading-relaxed text-[var(--gold-soft)]">
             {config.rsvp.body}
           </p>
           <p className="mt-8 kicker">RSVP</p>
           <a
             href={`tel:${config.rsvpNumber}`}
-            className="mt-2 block font-display text-xl tracking-[0.18em] text-[var(--burgundy)]"
+            className="mt-2 block font-display text-xl tracking-[0.18em] text-[var(--gold-soft)]"
           >
             {config.rsvpNumber}
           </a>
+
           <a
             className="btn-royal mt-8"
             href={waUrl}

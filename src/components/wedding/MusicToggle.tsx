@@ -6,8 +6,19 @@ export function MusicToggle({ active }: { active: boolean }) {
   const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
-    if (!active) audioRef.current?.pause();
+    const el = audioRef.current;
+    if (!el) return;
+    if (!active) {
+      el.pause();
+      setPlaying(false);
+      return;
+    }
+    el.volume = 0.6;
+    el.play()
+      .then(() => setPlaying(true))
+      .catch(() => setPlaying(false));
   }, [active]);
+
 
   const toggle = async () => {
     const el = audioRef.current;
@@ -30,7 +41,7 @@ export function MusicToggle({ active }: { active: boolean }) {
 
   return (
     <>
-      <audio ref={audioRef} src={config.musicFile} loop preload="none" />
+      <audio ref={audioRef} src={config.musicFile} loop preload="auto" />
       <button
         type="button"
         onClick={toggle}
