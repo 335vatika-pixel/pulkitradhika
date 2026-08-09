@@ -304,23 +304,24 @@ function Invitation() {
       </section>
 
       {/* 9 — RSVP */}
-      <section className="scene bg-[var(--cream)]">
+      <section className="scene night-panel">
         <Petals variant="gold" />
         <Reveal className="relative z-10 w-full max-w-[22rem]">
-          <h2 className="whitespace-pre-line font-display text-base leading-relaxed tracking-[0.28em] text-[var(--burgundy)]">
+          <h2 className="whitespace-pre-line font-display text-base leading-relaxed tracking-[0.28em] text-[var(--gold)]">
             {config.rsvp.heading}
           </h2>
           <Ornament />
-          <p className="whitespace-pre-line font-body text-[1rem] italic leading-relaxed text-[var(--burgundy)]">
+          <p className="whitespace-pre-line font-body text-[1rem] italic leading-relaxed text-[var(--gold-soft)]">
             {config.rsvp.body}
           </p>
           <p className="mt-8 kicker">RSVP</p>
           <a
             href={`tel:${config.rsvpNumber}`}
-            className="mt-2 block font-display text-xl tracking-[0.18em] text-[var(--burgundy)]"
+            className="mt-2 block font-display text-xl tracking-[0.18em] text-[var(--gold-soft)]"
           >
             {config.rsvpNumber}
           </a>
+
           <a
             className="btn-royal mt-8"
             href={waUrl}
