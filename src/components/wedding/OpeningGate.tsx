@@ -2,6 +2,7 @@ import { useState } from "react";
 import { config } from "@/config";
 import { Petals } from "./Petals";
 import gate from "@/assets/gate.jpg";
+import prLogo from "@/assets/pr-logo.png";
 
 export function OpeningGate({ onEnter }: { onEnter: () => void }) {
   const [opened, setOpened] = useState(false);
