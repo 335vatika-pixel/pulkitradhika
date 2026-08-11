@@ -17,7 +17,7 @@ export const config = {
   whatsappNumber: "919914031000",
   whatsappMessage:
     "Hello! We would love to RSVP for Pulkit & Radhika's Varmala and Vows on 13 September 2026.",
-  musicFile: weddingMusic.url,
+  musicFile: "/Parvati Boli Shankar Se Hansraj Raghuwanshi 128 Kbps.mp3",,
   countdownDate: "2026-09-13T00:00:00",
   mapsQuery: "Siddhartha Resorts, Pakhowal Road, Ludhiana",
 
