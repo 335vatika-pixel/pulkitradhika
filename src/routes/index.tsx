@@ -54,9 +54,22 @@ function Invitation() {
   const [entered, setEntered] = useState(false);
 
   useEffect(() => {
+    // Remember that the gates were already opened, so a refresh (or the
+    // preview reloading) doesn't drop guests back at the closed gate.
+    if (sessionStorage.getItem("pr-entered") === "1") {
+      setEntered(true);
+      setLoaded(true);
+      return;
+    }
     const id = setTimeout(() => setLoaded(true), 1400);
     return () => clearTimeout(id);
   }, []);
+
+  const handleEnter = () => {
+    sessionStorage.setItem("pr-entered", "1");
+    setEntered(true);
+  };
+
 
   useEffect(() => {
     document.body.style.overflow = entered ? "" : "hidden";
@@ -88,7 +101,7 @@ function Invitation() {
         </div>
       </div>
 
-      {!entered && loaded && <OpeningGate onEnter={() => setEntered(true)} />}
+      {!entered && loaded && <OpeningGate onEnter={handleEnter} />}
 
       <MusicToggle active={entered} />
 
