@@ -47,9 +47,18 @@ export function OpeningGate({ onEnter }: { onEnter: () => void }) {
           opened ? "opacity-0" : "opacity-100"
         }`}
       >
+        <img
+          src={prLogo}
+          alt="P & R monogram"
+          width={1024}
+          height={1024}
+          className="mb-6 h-24 w-24 object-contain drop-shadow-[0_2px_8px_oklch(0.2_0.03_55/0.6)]"
+        />
+
         <p className="max-w-[16rem] whitespace-pre-line font-body text-[1rem] italic leading-relaxed text-[var(--ivory)]">
           {config.opening.blessing}
         </p>
+
 
         <div className="my-6 h-px w-24 bg-[var(--gold)]" />
 
