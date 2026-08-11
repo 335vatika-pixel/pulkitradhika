@@ -7,6 +7,7 @@ export const config = {
   groomShort: "PULKIT",
   brideShort: "RADHIKA",
   weddingTitle: "VARMALA AND VOWS",
+  hashtag: "#RADsgotPULLed",
   date: "13 SEPTEMBER 2026",
   dateShort: "13 • 09 • 2026",
   day: "SUNDAY",
