@@ -183,13 +183,13 @@ function Invitation() {
       <section className="scene">
         <img
           src={temple}
-          alt="Indian temple pavilion beside a lotus pond at sunrise"
+          alt="Lamplit Mughal temple courtyard with diyas at night"
           loading="lazy"
           width={896}
           height={1408}
           className="drift-slow absolute inset-0 h-full w-full object-cover"
         />
-        <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.18_0.03_55/0.82),oklch(0.18_0.03_55/0.45)_45%,oklch(0.2_0.03_55/0.82))]" />
+        <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.14_0.02_55/0.7),oklch(0.14_0.02_55/0.3)_45%,oklch(0.12_0.02_55/0.75))]" />
         <div className="relative z-10 flex w-full flex-col items-center justify-center gap-14 py-8">
           <Reveal>
             <h2 className="whitespace-pre-line font-display text-base leading-loose tracking-[0.2em] text-[var(--ivory)] drop-shadow-[0_2px_8px_oklch(0.15_0.03_55/0.8)]">
