@@ -101,7 +101,7 @@ function Invitation() {
         </div>
       </div>
 
-      {!entered && loaded && <OpeningGate onEnter={() => setEntered(true)} />}
+      {!entered && loaded && <OpeningGate onEnter={handleEnter} />}
 
       <MusicToggle active={entered} />
 
