@@ -11,6 +11,7 @@ import temple from "@/assets/temple.jpg";
 import shivparvati from "@/assets/shivparvati.jpg";
 import mandap from "@/assets/mandap.jpg";
 import night from "@/assets/night.jpg";
+import prLogo from "@/assets/pr-logo.png";
 
 const title = "Pulkit & Radhika — Varmala and Vows | 13 Sept 2026";
 const description =
@@ -76,7 +77,13 @@ function Invitation() {
         }`}
       >
         <div className="text-center">
-          <span className="block text-3xl text-[var(--gold)]">❁</span>
+          <img
+            src={prLogo}
+            alt="P & R monogram"
+            width={1024}
+            height={1024}
+            className="mx-auto h-20 w-20 object-contain"
+          />
           <p className="kicker mt-4">{config.weddingTitle}</p>
         </div>
       </div>
