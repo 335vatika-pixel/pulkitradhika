@@ -189,16 +189,16 @@ function Invitation() {
           height={1408}
           className="drift-slow absolute inset-0 h-full w-full object-cover"
         />
-        <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.2_0.03_55/0.72),oklch(0.2_0.03_55/0.1)_45%,oklch(0.25_0.03_55/0.65))]" />
-        <div className="relative z-10 flex h-full w-full flex-col justify-between gap-40 py-6">
+        <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.18_0.03_55/0.82),oklch(0.18_0.03_55/0.45)_45%,oklch(0.2_0.03_55/0.82))]" />
+        <div className="relative z-10 flex w-full flex-col items-center justify-center gap-14 py-8">
           <Reveal>
-            <h2 className="whitespace-pre-line font-display text-lg leading-relaxed tracking-[0.24em] text-[var(--ivory)]">
+            <h2 className="whitespace-pre-line font-display text-base leading-loose tracking-[0.2em] text-[var(--ivory)] drop-shadow-[0_2px_8px_oklch(0.15_0.03_55/0.8)]">
               {config.blessings.heading}
             </h2>
           </Reveal>
           <Reveal delay={200}>
             <Names className="text-xl" />
-            <p className="mt-4 whitespace-pre-line font-body text-[0.95rem] italic leading-relaxed text-[var(--ivory)]">
+            <p className="mt-4 whitespace-pre-line font-body text-[0.95rem] italic leading-relaxed text-[var(--ivory)] drop-shadow-[0_2px_8px_oklch(0.15_0.03_55/0.8)]">
               {config.blessings.body}
             </p>
           </Reveal>
