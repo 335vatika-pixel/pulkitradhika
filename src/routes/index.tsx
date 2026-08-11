@@ -101,13 +101,24 @@ function Invitation() {
           height={1408}
           className="drift-slow absolute inset-0 h-full w-full object-cover"
         />
-        <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.35_0.04_130/0.7),oklch(0.35_0.04_130/0.15)_40%,oklch(0.4_0.04_130/0.6))]" />
+        <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.3_0.04_130/0.8),oklch(0.3_0.04_130/0.35)_40%,oklch(0.35_0.04_130/0.75))]" />
         <Petals variant="gold" />
         <Reveal className="relative z-10">
+          <img
+            src={prLogo}
+            alt="P & R monogram"
+            loading="lazy"
+            width={1024}
+            height={1024}
+            className="mx-auto mb-5 h-20 w-20 object-contain drop-shadow-[0_2px_8px_oklch(0.2_0.03_55/0.6)]"
+          />
           <p className="kicker">SHUBH VIVAH</p>
-          <h2 className="mt-4 font-script text-3xl italic text-[var(--ivory)]">
+          <h2 className="mt-4 font-script text-3xl italic text-[var(--ivory)] drop-shadow-[0_2px_8px_oklch(0.2_0.03_55/0.7)]">
             A new beginning blossoms
           </h2>
+          <p className="mt-6 font-display text-[0.8rem] tracking-[0.24em] text-[var(--gold-soft)] drop-shadow-[0_2px_6px_oklch(0.2_0.03_55/0.7)]">
+            {config.hashtag}
+          </p>
         </Reveal>
       </section>
 
