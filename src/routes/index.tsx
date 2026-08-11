@@ -117,6 +117,14 @@ function Invitation() {
           <Reveal>
             <div className="scroll-rod mx-2" />
             <div className="parchment filigree-frame px-6 py-10">
+              <img
+                src={prLogo}
+                alt="P & R monogram"
+                loading="lazy"
+                width={1024}
+                height={1024}
+                className="mx-auto mb-4 h-16 w-16 object-contain"
+              />
               <p className="font-display text-[0.72rem] tracking-[0.34em] text-[var(--gold)]">
                 {config.weddingTitle}
               </p>
@@ -359,6 +367,14 @@ function Invitation() {
         <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.15_0.04_265/0.6),oklch(0.12_0.04_265/0.75))]" />
         <Petals variant="gold" />
         <Reveal className="relative z-10">
+          <img
+            src={prLogo}
+            alt="P & R monogram"
+            loading="lazy"
+            width={1024}
+            height={1024}
+            className="mx-auto mb-6 h-20 w-20 object-contain"
+          />
           <h2 className="whitespace-pre-line font-script text-2xl italic leading-relaxed text-[var(--gold-soft)]">
             {config.final.heading}
           </h2>
