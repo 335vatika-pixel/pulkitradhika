@@ -93,15 +93,15 @@ function Invitation() {
       <MusicToggle active={entered} />
 
       {/* 2 — Lotus */}
-      <section className="scene bg-[var(--sage-deep)]">
+      <section className="scene night-panel">
         <img
           src={lotus}
-          alt="Pink lotus in bloom"
+          alt="Lotus blossoms floating on a lamplit temple pond at night"
           width={896}
           height={1408}
           className="drift-slow absolute inset-0 h-full w-full object-cover"
         />
-        <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.3_0.04_130/0.8),oklch(0.3_0.04_130/0.35)_40%,oklch(0.35_0.04_130/0.75))]" />
+        <div className="scene-veil bg-[linear-gradient(to_bottom,oklch(0.14_0.02_150/0.65),oklch(0.14_0.02_150/0.25)_45%,oklch(0.12_0.02_150/0.7))]" />
         <Petals variant="gold" />
         <Reveal className="relative z-10">
           <img
