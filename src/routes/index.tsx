@@ -70,6 +70,13 @@ function Invitation() {
     setEntered(true);
   };
 
+  const handleReplay = () => {
+    sessionStorage.removeItem("pr-entered");
+    setEntered(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+
 
   useEffect(() => {
     document.body.style.overflow = entered ? "" : "hidden";
@@ -421,6 +428,13 @@ function Invitation() {
             className="btn-outline-gold mt-8"
           >
             BACK TO TOP
+          </button>
+          <button
+            type="button"
+            onClick={handleReplay}
+            className="btn-outline-gold mt-4"
+          >
+            Replay intro
           </button>
         </Reveal>
       </section>
