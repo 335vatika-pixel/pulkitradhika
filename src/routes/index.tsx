@@ -70,6 +70,13 @@ function Invitation() {
     setEntered(true);
   };
 
+  const handleReplay = () => {
+    sessionStorage.removeItem("pr-entered");
+    setEntered(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+
 
   useEffect(() => {
     document.body.style.overflow = entered ? "" : "hidden";
