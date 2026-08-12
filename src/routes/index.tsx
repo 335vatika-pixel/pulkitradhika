@@ -429,6 +429,13 @@ function Invitation() {
           >
             BACK TO TOP
           </button>
+          <button
+            type="button"
+            onClick={handleReplay}
+            className="btn-outline-gold mt-4"
+          >
+            Replay intro
+          </button>
         </Reveal>
       </section>
     </main>
